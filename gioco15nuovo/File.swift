@@ -14,6 +14,7 @@ class cella
     var riga: Int = 0;
     var colonna: Int = 0;
     var zero: Int = 0;
+    var arr: [[Int]] = []
     func metadone()
     {
        print("hello")
