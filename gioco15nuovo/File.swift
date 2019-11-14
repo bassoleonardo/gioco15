@@ -18,6 +18,8 @@ class cella
     [5, 6, 7, 8],
     [9, 10, 11, 12],
     [13, 14, 15, 16]]
+     // quando vado a toccare un bottone devo spostare sia il tag del bottone sia il numero della matrice, oltre che
+     // (ovviamente), l'immagine del bottone, in modo da allineare la parte oggettuale con la parte grafica.
     func metadone()
     {
        print("hello")
