@@ -18,4 +18,37 @@ class cella
     {
        print("hello")
     }
+    func scambiaNumero(posZero: Int, posTocco: Int, posBottone: Int)
+    {
+        for button in 0...16
+        {
+            if posBottone == button.tag
+            {
+                if (posTocco + 1 == posZero)
+                {
+                    button.setTitle(String(""), for: .normal);
+                    button.setTitle(String(posZero - 1), for: .normal)
+                }
+                else if(posTocco - 1 == posZero)
+                {
+                    button.setTitle(String(""), for: .normal);
+                    button.setTitle(String(posTocco - 1), for: .normal)
+                }
+                else if(posTocco + 4 == posZero)
+                {
+                    button.setTitle(String(""), for: .normal);
+                    button.setTitle(String(posTocco + 4), for: .normal)
+                }
+                else if (posTocco - 4 == posZero)
+                {
+                    button.setTitle(String(""), for: .normal);
+                    button.setTitle(String(posTocco - 4), for: .normal)
+                }
+                else
+                {
+                    print("non puoi muovere questa tessera");
+                }
+            }
+        }
+    }
 }
